@@ -1,5 +1,5 @@
 {% set name = "aqme" %}
-{% set version = "1.4.1" %}
+{% set version = "1.4.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/aqme-{{ version }}.tar.gz
-  sha256: f1b7c746e1655d486558d9a55a63a4ea300d5cfd6bbe144ef6ded56b9ddc2c3f
+  sha256: 29a09cda647850144a6fb824a240cf1da3d2f7ffeff96e00d8ca5237acb375b1
 
 build:
   noarch: python
