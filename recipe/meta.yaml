@@ -1,5 +1,5 @@
 {% set name = "aqme" %}
-{% set version = "1.4.7" %}
+{% set version = "1.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/aqme-{{ version }}.tar.gz
-  sha256: ebc17be309969e9fa424d1de655547f40177926a78f10dd905d505b71e448a6b
+  sha256: 47053cc6fb3344d0ef76382bd931e4e791f537a4f2ee32c25aebdbceb8f6d85b
 
 build:
   noarch: python
@@ -34,6 +34,7 @@ requirements:
     - goodvibes
     - py3Dmol
     - ipywidgets
+    - dbstep
 
 test:
   imports:
