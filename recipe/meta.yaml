@@ -20,11 +20,11 @@ requirements:
     - python >=3.6
   run:
     - ase
-    - cclib
+    - cclib ==1.7.2
     - cffi
     - matplotlib-base
     - numpy
-    - pandas
+    - pandas >=2.0.2
     - progress
     - python >=3.6
     - pyyaml
