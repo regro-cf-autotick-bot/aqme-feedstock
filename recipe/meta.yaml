@@ -1,5 +1,5 @@
 {% set name = "aqme" %}
-{% set version = "1.5.2" %}
+{% set version = "1.6.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/aqme-{{ version }}.tar.gz
-  sha256: 43085144441e6c36a9c6a83a145e37df3dbc2183dab7b3fa604bf578bc04baab
+  sha256: 092182096bd82f72b6f03cc3cc854a4b71b13af7edcad59cf685f1df640efa92
 
 build:
   noarch: python
@@ -19,22 +19,15 @@ requirements:
     - pip
     - python >=3.6
   run:
-    - ase
+    - python >=3.6
     - cclib ==1.7.2
     - cffi
-    - matplotlib-base
-    - numpy
-    - pandas >=2.0.2
+    - numpy ==1.26.4
+    - pandas ==2.2.2
     - progress
-    - python >=3.6
     - pyyaml
-    - seaborn
-    - openbabel
-    - rdkit
-    - goodvibes
-    - py3Dmol
-    - ipywidgets
-    - dbstep
+    - openbabel ==3.1.1
+    - rdkit ==2024.3.3
 
 test:
   imports:
@@ -54,3 +47,4 @@ extra:
   recipe-maintainers:
     - jvalegre
     - shreesowndarya
+    - ddgunizar
